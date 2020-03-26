@@ -81,22 +81,6 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7900 1700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 1900 8300 2600
-Wire Wire Line
-	8300 2600 8400 2600
-Wire Wire Line
-	8400 2700 8200 2700
-Wire Wire Line
-	8200 2700 8200 1900
-Wire Wire Line
-	8100 1900 8100 2800
-Wire Wire Line
-	8100 2800 8400 2800
-Wire Wire Line
-	8400 2900 8000 2900
-Wire Wire Line
-	8000 2900 8000 1900
-Wire Wire Line
 	7900 1900 7900 3000
 Wire Wire Line
 	7900 3000 8400 3000
@@ -157,16 +141,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 3000 7900 3000
 Connection ~ 7900 3000
-Connection ~ 8000 2900
-Wire Wire Line
-	8100 2800 7300 2800
-Connection ~ 8100 2800
-Wire Wire Line
-	8200 2700 7300 2700
-Connection ~ 8200 2700
-Wire Wire Line
-	8300 2600 7300 2600
-Connection ~ 8300 2600
 $Comp
 L Switch:SW_Push SW7
 U 1 1 5E727E95
@@ -211,8 +185,6 @@ F 3 "~" H 7100 3200 50  0001 C CNN
 	1    7100 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8000 2900 7300 2900
 $Comp
 L Switch:SW_Push SW8
 U 1 1 5E7245B3
@@ -961,4 +933,16 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    4950 4200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7300 2900 8400 2900
+Wire Wire Line
+	7300 2800 8400 2800
+Wire Wire Line
+	7300 2700 8400 2700
+Wire Wire Line
+	7300 2600 8400 2600
+NoConn ~ 8000 1900
+NoConn ~ 8100 1900
+NoConn ~ 8200 1900
+NoConn ~ 8300 1900
 $EndSCHEMATC
